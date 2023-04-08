@@ -28,3 +28,9 @@ button {
   margin: 1em auto;
   padding: 0.5em;
 }
+
+.search-container input {
+  padding: 1em;
+  border-radius: 0.5em;
+  font-weight: 400;
+}
