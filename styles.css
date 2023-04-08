@@ -34,3 +34,16 @@ button {
   border-radius: 0.5em;
   font-weight: 400;
 }
+
+.loader {
+  height: 15em;
+  width: 15em;
+  border: 3em solid #2b304d;
+  border-radius: 50%;
+  border-top-color: #13fc97;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  animation: spin 3s infinite;
+}
