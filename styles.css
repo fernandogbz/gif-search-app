@@ -36,6 +36,7 @@ button {
 }
 
 .loader {
+  display: none;
   height: 15em;
   width: 15em;
   border: 3em solid #2b304d;
@@ -46,4 +47,10 @@ button {
   left: 50%;
   top: 50%;
   animation: spin 3s infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
