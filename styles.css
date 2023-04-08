@@ -18,3 +18,13 @@ button {
   border-radius: 0.5em;
   font-weight: 500;
 }
+
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  width: 100%;
+  max-width: 50em;
+  margin: 1em auto;
+  padding: 0.5em;
+}
