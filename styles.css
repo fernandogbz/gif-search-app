@@ -8,3 +8,13 @@
 body {
   background-color: #151d2f;
 }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #13fc97;
+  color: #151d2f;
+  border-radius: 0.5em;
+  font-weight: 500;
+}
