@@ -8,7 +8,10 @@ let generateGif = () => {
 
   // get search value (default => laugh)
   let query = document.getElementById("search-box").value;
-  // 10 gifs displayed result
+  // result 10 gifs displayed
+  let gifCount = 10;
+  // API URL
+  let finalURL = `https://api.giphy.com/v1/search?api_key=${apiKey}&q=${query}&limit=${gifCount}&offset=0&rating=g&lang=en`;
 };
 
 // Generate Gifs on screen load or when user clicks on submit
