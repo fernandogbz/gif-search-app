@@ -23,6 +23,8 @@ let generateGif = () => {
       let gifsData = info.data;
       gifsData.forEach((gif) => {
         // generate cards for every gif
+        let container = document.createElement("div");
+        container.classList.add("container");
         
       });
     });
