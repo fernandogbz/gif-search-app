@@ -21,6 +21,10 @@ let generateGif = () => {
       console.log(info.data);
       // all gifs
       let gifsData = info.data;
+      gifsData.forEach((gif) => {
+        // generate cards for every gif
+        
+      });
     });
 };
 
