@@ -31,6 +31,11 @@ let generateGif = () => {
         iframe.onload = () => {
           // if iframes has loaded correctly reduce the count when each gif loads
           gifCount--;
+          if (gifCount == 0) {
+            // if iframes has loaded then hide loader and display gifs UI
+          loader.style.display = "none";
+          document.querySelector(".wrapper").style.display = "grid";
+          }
         }
       });
     });
