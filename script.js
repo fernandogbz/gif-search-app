@@ -17,7 +17,11 @@ let generateGif = () => {
   // request to API
   fetch(finalURL)
     .then((response) => response.json())
-    .then((info) => console.log(info.data));
+    .then((info) => {
+      console.log(info.data);
+      // all gifs
+      let gifsData = info.data;
+    });
 };
 
 // Generate Gifs on screen load or when user clicks on submit
