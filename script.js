@@ -27,6 +27,11 @@ let generateGif = () => {
         container.classList.add("container");
         let iframe = document.createElement("img");
         console.log(gif);
+        iframe.setAttribute("src", gif.images.downsized_medium.url);
+        iframe.onload = () => {
+          // if iframes has loaded correctly reduce the count when each gif loads
+          gifCount--;
+        }
       });
     });
 };
