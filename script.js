@@ -5,6 +5,9 @@ let generateGif = () => {
   let loader = document.querySelector(".loader");
   loader.style.display = "block";
   document.querySelector(".wrapper").style.display = "none";
+
+  // get search value (default => laugh)
+  let query = document.getElementById("search-box").value;
 };
 
 // Generate Gifs on screen load or when user clicks on submit
