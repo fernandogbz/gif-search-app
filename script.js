@@ -8,6 +8,7 @@ let generateGif = () => {
 
   // get search value (default => laugh)
   let query = document.getElementById("search-box").value;
+  // 10 gifs displayed result
 };
 
 // Generate Gifs on screen load or when user clicks on submit
