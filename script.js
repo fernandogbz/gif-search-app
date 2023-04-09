@@ -25,7 +25,8 @@ let generateGif = () => {
         // generate cards for every gif
         let container = document.createElement("div");
         container.classList.add("container");
-        
+        let iframe = document.createElement("img");
+        console.log(gif);
       });
     });
 };
