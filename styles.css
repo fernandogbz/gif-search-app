@@ -59,6 +59,10 @@ button {
   padding: 1em 0;
 }
 
+.container button:hover {
+  background-color: #13cd7d;
+}
+
 .loader {
   display: none;
   height: 15em;
