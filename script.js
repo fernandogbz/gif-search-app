@@ -60,6 +60,8 @@ let generateGif = () => {
             hiddenInput.select();
             // copy the value
             document.execCommand("copy");
+            // remove the input
+            document.body.removeChild(hiddenInput);
           })
         }
         document.querySelector(".wrapper").append(container);
