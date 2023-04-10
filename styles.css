@@ -54,6 +54,10 @@ button {
   width: 100%;
 }
 
+.container button {
+  margin-top: 1em;
+}
+
 .loader {
   display: none;
   height: 15em;
