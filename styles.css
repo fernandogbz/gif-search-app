@@ -56,6 +56,7 @@ button {
 
 .container button {
   margin-top: 1em;
+  padding: 1em 0;
 }
 
 .loader {
@@ -75,5 +76,14 @@ button {
 @keyframes spin {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    margin: 0.7em;
   }
 }
