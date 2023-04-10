@@ -35,6 +35,11 @@ button {
   font-weight: 400;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .loader {
   display: none;
   height: 15em;
