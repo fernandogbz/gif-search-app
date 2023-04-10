@@ -38,6 +38,13 @@ let generateGif = () => {
           }
         };
         container.append(iframe);
+
+        // copy link button
+        let copyBtn = document.createElement("button");
+        copyBtn.innerText = "Copy Link";
+        copyBtn.onclick = () => {
+          
+        }
         document.querySelector(".wrapper").append(container);
       });
     });
