@@ -43,7 +43,8 @@ let generateGif = () => {
         let copyBtn = document.createElement("button");
         copyBtn.innerText = "Copy Link";
         copyBtn.onclick = () => {
-          
+          // append the obtainer ID to default URL
+          let copyLink = "https://media4.giphy.com/media/${gif.id}/giphy.mp4";
         }
         document.querySelector(".wrapper").append(container);
       });
