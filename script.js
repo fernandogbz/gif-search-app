@@ -48,6 +48,9 @@ let generateGif = () => {
           // copy text inside the text field
           navigator.clipboard.writeText(copyLink).then(() => {
             alert("GIF copied to clipboard");
+          }).catch(() => {
+            // if navigator isn't supported
+            alert("GIF copied to clipboard");
           })
         }
         document.querySelector(".wrapper").append(container);
