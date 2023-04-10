@@ -50,6 +50,10 @@ button {
   border-radius: 0.5em;
 }
 
+.container img {
+  width: 100%;
+}
+
 .loader {
   display: none;
   height: 15em;
