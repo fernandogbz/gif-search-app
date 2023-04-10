@@ -47,10 +47,16 @@ let generateGif = () => {
           let copyLink = `https://media4.giphy.com/media/${gif.id}/giphy.mp4`;
           // copy text inside the text field
           navigator.clipboard.writeText(copyLink).then(() => {
-            alert("GIF copied to clipboard");
+            copyBtn.innerText = "Copied! ✅"
+            setTimeout(() => {
+              copyBtn.innerText = "Copy Link";
+            }, 2000);
           }).catch(() => {
             // if navigator isn't supported
-            alert("GIF copied to clipboard");
+            copyBtn.innerText = "Copied! ✅"
+            setTimeout(() => {
+              copyBtn.innerText = "Copy Link";
+            }, 2000);
             // create temporary input
             let hiddenInput = document.createElement("input");
             hiddenInput.setAttribute("type", "text");
