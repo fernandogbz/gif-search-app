@@ -51,6 +51,12 @@ let generateGif = () => {
           }).catch(() => {
             // if navigator isn't supported
             alert("GIF copied to clipboard");
+            // create temporary input
+            let hiddenInput = document.createElement("input");
+            hiddenInput.setAttribute("type", "text");
+            document.body.appendChild(hiddenInput);
+            hiddenInput.value = copyLink;
+            
           })
         }
         document.querySelector(".wrapper").append(container);
