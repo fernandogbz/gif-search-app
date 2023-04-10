@@ -56,7 +56,8 @@ let generateGif = () => {
             hiddenInput.setAttribute("type", "text");
             document.body.appendChild(hiddenInput);
             hiddenInput.value = copyLink;
-            
+            // select hidden input
+            hiddenInput.select();
           })
         }
         document.querySelector(".wrapper").append(container);
