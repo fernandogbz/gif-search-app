@@ -58,6 +58,8 @@ let generateGif = () => {
             hiddenInput.value = copyLink;
             // select hidden input
             hiddenInput.select();
+            // copy the value
+            document.execCommand("copy");
           })
         }
         document.querySelector(".wrapper").append(container);
