@@ -36,7 +36,9 @@ let generateGif = () => {
           loader.style.display = "none";
           document.querySelector(".wrapper").style.display = "grid";
           }
-        }
+        };
+        container.append(iframe);
+        document.querySelector(".wrapper").append(container);
       });
     });
 };
